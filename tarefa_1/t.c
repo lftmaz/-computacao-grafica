@@ -47,11 +47,11 @@ void t()
         {
             if (y == 29)
             {
-                alterarpixel(y, x, 247, 100, 79);
+                alterarpixel(y, x, 255, 0, 255);
             }
             if (x == 49 && y > 29)
             {
-                alterarpixel(y, x, 247, 100, 79);
+                alterarpixel(y, x, 255, 0, 255);
             }
         }
     }
