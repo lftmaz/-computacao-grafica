@@ -16,3 +16,9 @@ float normaVetor(float vet[]);
 Coordenadas deslocarPonto(float vet[], Coordenadas p1, char operacao);
 
 float *somaVetores(float vet1[], float vet2[], char operacao);
+
+void multiplicacaoEscalar (float vet[], float escalar);
+
+void normalizacaoVetor (float vet[]);
+
+float produtoInterno(float vet[]);

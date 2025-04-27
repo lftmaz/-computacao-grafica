@@ -62,7 +62,25 @@ float *somaVetores(float vet1[], float vet2[], char operacao)
         }
         printf("Vetor Resultante <%.2f , %.2f, %.2f>\n", vetorResultante[0], vetorResultante[1], vetorResultante[2]);
         return vetorResultante;
-    }
+    }else{
     free(vetorResultante);
     return NULL;
+    }
+}
+
+void multiplicacaoEscalar(float vet[], float escalar){
+    for (int i = 0; i < 3; i++)
+    {
+        vet[i] = vet[i] * escalar;
+    }
+}
+
+void normalizacaoVetor(float vet[]){
+    
+    float norma = normaVetor(vet);
+
+    for (int i = 0; i < 3; i++)
+    {
+       vet[i] = vet[i]/norma;
+    }
 }
