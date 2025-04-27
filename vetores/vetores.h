@@ -1,14 +1,18 @@
 #include <stdio.h>
 #include <math.h>
-
+#include <stdlib.h>
 
 typedef struct coordenadas
 {
    float x;
    float y;
    float z;
-}Coordenadas;
+} Coordenadas;
 
 void gerarVetor(Coordenadas p1, Coordenadas p2, float vet[]);
 
 float normaVetor(float vet[]);
+
+Coordenadas deslocarPonto(float vet[], Coordenadas p1, char operacao);
+
+float *somaVetores(float vet1[], float vet2[], char operacao);
