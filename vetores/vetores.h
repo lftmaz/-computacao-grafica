@@ -11,4 +11,4 @@ typedef struct coordenadas
 
 void gerarVetor(Coordenadas p1, Coordenadas p2, float vet[]);
 
-float normaVetor(float vet[]){}
+float normaVetor(float vet[]);
