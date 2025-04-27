@@ -6,6 +6,9 @@ typedef struct coordenadas
 {
    float x;
    float y;
+   float z;
 }Coordenadas;
 
-void gerarvetor(Coordenadas p1, Coordenadas p2, float vet[]);
+void gerarVetor(Coordenadas p1, Coordenadas p2, float vet[]);
+
+float normaVetor(float vet[]){}

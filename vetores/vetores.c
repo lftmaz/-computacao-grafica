@@ -1,9 +1,13 @@
 #include "vetores.h"
 
 void gerarvetor( Coordenadas pi, Coordenadas pf, float vet[]){
-    printf("Dentro de gerarvetor: P1 = (%.2f, %.2f), P2 = (%.2f, %.2f)\n", pi.x, pi.y, pf.x, pf.y);
     vet[0] = pf.x - pi.x;
     vet[1] = pf.y - pi.y;
+    vet[2] = pf.z - pi.z;
+}
+
+float normaVetor(float vet[]){
+    return (sqrt(pow(vet[1],2) +  pow(vet[2],2) + pow(vet[3],2)));
 }
 
 
