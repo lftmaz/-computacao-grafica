@@ -21,4 +21,6 @@ void multiplicacaoEscalar (float vet[], float escalar);
 
 void normalizacaoVetor (float vet[]);
 
-float produtoInterno(float vet[]);
+float produtoInterno(float vet1[], float vet2[]);
+
+float *produtoVetorial(float vet1[], float vet2[]);

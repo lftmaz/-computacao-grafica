@@ -84,3 +84,24 @@ void normalizacaoVetor(float vet[]){
        vet[i] = vet[i]/norma;
     }
 }
+
+float produtoInterno(float vet1[],float vet2[]){
+    for (int i = 0; i < 3; i++)
+    {
+        return (vet1[0] * vet2[0] + vet1[1] * vet2[1] + vet1[2] * vet2[2]);
+    }
+    
+}
+
+
+float* produtoVetorial(float vet1[], float vet2[]){
+    float* vetorResultante = (float*) malloc(3 *sizeof(float));
+    if(vetorResultante == NULL){
+        printf("Erro de alocacao");
+        return 0;
+    }
+       vetorResultante[0] = (vet1[1] * vet2[2] - (vet1[2] * vet2[1]));
+       vetorResultante[1] = (vet1[2] * vet2[0] - (vet1[0] * vet2[2]));
+       vetorResultante[2] = (vet1[0] * vet2[1] - (vet1[1] * vet2[0]));
+       return vetorResultante;
+}
