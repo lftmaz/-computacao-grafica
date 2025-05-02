@@ -1,4 +1,4 @@
-#include "vetores.h"
+#include "vetores.c"
 
 #define escalar 4
 

@@ -41,9 +41,9 @@ void imprimirimg()
 
 void t()
 {
-    for (int y = 0; y < altura - 2; y++)
+    for (int y = 0; y < altura - 15; y++)
     {
-        for (int x = 2; x < largura - 2; x++)
+        for (int x = 9; x < largura - 10; x++)
         {
             if (y == 29)
             {

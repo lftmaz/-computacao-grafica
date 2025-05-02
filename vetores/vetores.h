@@ -1,13 +1,4 @@
-#include <stdio.h>
-#include <math.h>
-#include <stdlib.h>
-
-typedef struct coordenadas
-{
-   float x;
-   float y;
-   float z;
-} Coordenadas;
+typedef struct coordenadas Coordenadas;
 
 void gerarVetor(Coordenadas p1, Coordenadas p2, float vet[]);
 

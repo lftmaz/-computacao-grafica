@@ -1,4 +1,15 @@
 #include "vetores.h"
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+ struct coordenadas
+ {
+    float x;
+    float y;
+    float z;
+ };
+
 
 void gerarVetor(Coordenadas pi, Coordenadas pf, float vet[])
 {
